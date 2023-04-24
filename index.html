@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>CalculatorObjectWithHistory</title>
+  <script src="calculator.js" type="module" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="app border rounded m-md-5 p-md-5 m-2 p-3 bg-light">
+      <h1 class="mb-md-5 mb-2">Http module example “Calculator”</h1>
+      <form>
+        <div class="form-group row">
+          <label for="operand1" class="col-md-3 col-form-label col-form-label-lg">Operand 1:</label>
+          <div class="col-md-9">
+            <input type="number" class="form-control form-control-lg" id="operand1" placeholder="Enter a number">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="operand2" class="col-md-3 col-form-label col-form-label-lg">Operand 2:</label>
+          <div class="col-md-9">
+            <input type="number" class="form-control form-control-lg" id="operand2" placeholder="Enter a number">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label col-form-label-lg">Operators: </label>
+          <div class="col-md-9">
+            <div class="input-group">
+              <input type="text" class="form-control form-control-lg" id="operator" placeholder="Enter an operator">
+              <div class="input-group-append">
+                <button class="btn btn-primary btn-lg" type="button" id="btnCalculate">Calculate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="result" class="col-md-3 col-form-label col-form-label-lg">Result:</label>
+          <div class="col-md-9">
+            <output class="form-control form-control-lg bg-light" id="result" for="operand1 operand2">0</output>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
